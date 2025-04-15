@@ -1,0 +1,216 @@
+/* Reset 基本樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* 商品區排版 */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* 商品卡片樣式 */
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin: 12px 0 6px;
+}
+
+.product-card p {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* 導覽列樣式 */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+        .navbar .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+            .navbar .nav-links li a:hover {
+                text-decoration: underline;
+            }
+
+/* 商品展示區 */
+.product-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .product-card h3 {
+        margin: 10px 0 5px;
+    }
+
+    .product-card p {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .product-card button {
+        background-color: #2c3e50;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+        .product-card button:hover {
+            background-color: #34495e;
+        }
+
+/* 頁尾樣式 */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+}
+
+.cart {
+    font-size: 1.2rem;
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+#cart-area {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid #ddd;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+    #cart-items li {
+        margin: 0.5rem 0;
+    }
+
+#clear-cart {
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    #clear-cart:hover {
+        background-color: #ff0000;
+    }
